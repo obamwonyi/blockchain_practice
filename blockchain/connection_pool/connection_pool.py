@@ -64,7 +64,7 @@ class ConnectionPool:
         """
         message = "===\n"
         message += "Currently connected users:"
-        for user in self.connnection_pool:
+        for user in self.connection_pool:
             if user == writer:
                 message += f"\n - {user.nickname} (you)"
             else:
